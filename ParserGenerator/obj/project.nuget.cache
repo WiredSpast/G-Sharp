@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "eeRAIXMnLjnVChVuDFZplQgNGAyYbkgZASJ4T04wldUYUX5S78T6LAkj2Im54yWHKKL/bRIZLXCJRZTNP77RJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jonas\\RiderProjects\\GSharp\\ParserGenerator\\ParserGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.5-beta1.23225.2\\microsoft.codeanalysis.analyzers.3.3.5-beta1.23225.2.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.codeanalysis.common\\4.7.0-1.final\\microsoft.codeanalysis.common.4.7.0-1.final.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.7.0-1.final\\microsoft.codeanalysis.csharp.4.7.0-1.final.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

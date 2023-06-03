@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSharp", "GSharp\GSharp.csproj", "{2550FDEE-A9FF-4201-83BA-3A529574D5C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{4659FB05-7DEE-42BC-8825-543BF34F3937}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2550FDEE-A9FF-4201-83BA-3A529574D5C9} = {2550FDEE-A9FF-4201-83BA-3A529574D5C9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2550FDEE-A9FF-4201-83BA-3A529574D5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2550FDEE-A9FF-4201-83BA-3A529574D5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2550FDEE-A9FF-4201-83BA-3A529574D5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2550FDEE-A9FF-4201-83BA-3A529574D5C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4659FB05-7DEE-42BC-8825-543BF34F3937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4659FB05-7DEE-42BC-8825-543BF34F3937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4659FB05-7DEE-42BC-8825-543BF34F3937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4659FB05-7DEE-42BC-8825-543BF34F3937}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
