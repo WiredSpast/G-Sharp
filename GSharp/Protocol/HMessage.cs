@@ -64,7 +64,7 @@ namespace GSharp.Protocol
             string[] parts = str.Split('\t', 4);
             this.isBlocked = parts[0] == "1";
             this.index = int.Parse(parts[1]);
-            this.direction = parts[2] == "TOCLIENT" ? Direction.TOCLIENT : Direction.TOSERVER
+            this.direction = parts[2] == "TOCLIENT" ? Direction.TOCLIENT : Direction.TOSERVER;
             HPacket p = new HPacket(new byte[0]);
             p.constructFromString(parts[3]);
             this.hPacket = p;
