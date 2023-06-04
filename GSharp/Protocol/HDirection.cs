@@ -3,5 +3,7 @@
 public enum HDirection
 {
     ToClient,
-    ToServer
+    ToServer,
+    TOCLIENT,
+    TOSERVER
 }

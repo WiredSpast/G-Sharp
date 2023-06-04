@@ -100,6 +100,20 @@ public class HPacket
         return _bytes.Skip(index).ToBool();
     }
 
+    public Boolean isCorrupted()
+    {
+
+        if (BytesLength >= 6)
+        {
+            if (Length == BytesLength - 4)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     public byte ReadByte()
     {
         _readIndex += 1;
@@ -462,5 +476,10 @@ public class HPacket
     public override int GetHashCode()
     {
         return HashCode.Combine(_isEdited, _bytes, _identifier, _direction);
+    }
+
+    internal void constructFromString(string v)
+    {
+        throw new NotImplementedException();
     }
 }
