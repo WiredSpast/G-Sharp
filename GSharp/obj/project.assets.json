@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\altorx\\Documents\\G-Sharp-main\\GSharp\\GSharp.csproj",
+      "projectUniqueName": "C:\\Users\\altorx\\Documents\\G-Sharp\\GSharp\\GSharp.csproj",
       "projectName": "GSharp",
-      "projectPath": "C:\\Users\\altorx\\Documents\\G-Sharp-main\\GSharp\\GSharp.csproj",
+      "projectPath": "C:\\Users\\altorx\\Documents\\G-Sharp\\GSharp\\GSharp.csproj",
       "packagesPath": "C:\\Users\\altorx\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\altorx\\Documents\\G-Sharp-main\\GSharp\\obj\\",
+      "outputPath": "C:\\Users\\altorx\\Documents\\G-Sharp\\GSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\altorx\\AppData\\Roaming\\NuGet\\NuGet.Config",

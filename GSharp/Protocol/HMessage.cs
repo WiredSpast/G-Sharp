@@ -49,7 +49,6 @@ namespace GSharp.Protocol
             this.index = int.Parse(parts[1]);
             this.direction = parts[2] == "TOCLIENT" ? HDirection.ToClient : HDirection.ToServer;
             HPacket p = new HPacket(parts[3]);
-            p.constructFromString(parts[3]);
             this.hPacket = p;
         }
 
