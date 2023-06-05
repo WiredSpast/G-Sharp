@@ -451,9 +451,8 @@ public class HPacket
 
     public void FixLength()
     {
-        var remember = _isEdited;
-        Replace(0, BytesLength - 4);
-        _isEdited = remember;
+        var length = BytesLength - 4;
+        length.ToBytes().CopyTo(_bytes, 0);
     }
     
     public override bool Equals(object? obj)
