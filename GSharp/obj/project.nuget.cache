@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kyU+5XYxw3w1z4xc9my1A7Id/FgyEANZ14Q6MqCScuiLHEZCk1NJIubTvFkZ0DKeW+6TIPRJ0wEP2xJ2bQIXsw==",
+  "dgSpecHash": "gWTdFt1cqrI8xiGEDVkpLPblyszF3D7MzNM90LArdTMTvCA5OSrD+HTAmpKLl2qu/fBpd3Nw0MQd5jMWR0BwxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonas\\RiderProjects\\GSharp\\GSharp\\GSharp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\altorx\\Documents\\G-Sharp\\GSharp\\GSharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\altorx\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

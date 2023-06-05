@@ -100,6 +100,20 @@ public class HPacket
         return _bytes.Skip(index).ToBool();
     }
 
+    public Boolean IsCorrupted()
+    {
+
+        if (BytesLength >= 6)
+        {
+            if (Length == BytesLength - 4)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     public byte ReadByte()
     {
         _readIndex += 1;
@@ -437,9 +451,8 @@ public class HPacket
 
     public void FixLength()
     {
-        var remember = _isEdited;
-        Replace(0, BytesLength - 4);
-        _isEdited = remember;
+        var length = BytesLength - 4;
+        length.ToBytes().CopyTo(_bytes, 0);
     }
     
     public override bool Equals(object? obj)
@@ -462,5 +475,10 @@ public class HPacket
     public override int GetHashCode()
     {
         return HashCode.Combine(_isEdited, _bytes, _identifier, _direction);
+    }
+
+    internal void constructFromString(string v)
+    {
+        throw new NotImplementedException();
     }
 }
