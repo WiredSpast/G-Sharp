@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cQbJj4IM63HOvh0FS7HMlWk/IIL+mny23S3kvfy/K4oVaLgRiL/CESvfIxYk+y73sXjowi2mBKOiLN90LHfg3Q==",
+  "dgSpecHash": "ZvfqQr7VVp/9xSK7zslpLppyYRlMSPXoURHIN1U/jwj6Tv9zM2fVTy8HAFQRCyhUK9m1XFLeh6swLWFmfIrmBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\altorx\\Documents\\G-Sharp\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     "C:\\Users\\altorx\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
     "C:\\Users\\altorx\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
     "C:\\Users\\altorx\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\altorx\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\altorx\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\altorx\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\altorx\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\altorx\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
