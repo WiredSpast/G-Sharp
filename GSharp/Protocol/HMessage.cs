@@ -4,14 +4,8 @@ namespace GSharp.Protocol
 {
     public class HMessage : StringifyAble
     {
-        public enum Direction
-        {
-            TOSERVER,
-            TOCLIENT
-        }
-
         private HPacket hPacket;
-        private Direction direction;
+        private HDirection direction;
         private int index;
 
         private Boolean isBlocked;
@@ -38,19 +32,25 @@ namespace GSharp.Protocol
             return hPacket;
         }
 
-        public Direction getDestination()
+        public HDirection getDestination()
         {
             return direction;
         }
 
-        public Boolean isCorrupted()
+        public Boolean IsCorrupted()
         {
-            return hPacket.isCorrupted();
+            return hPacket.IsCorrupted();
         }
 
-        public HMessage(String fromString)
+        public HMessage(String str)
         {
-            constructFromString(fromString);
+            string[] parts = str.Split('\t', 4);
+            this.isBlocked = parts[0] == "1";
+            this.index = int.Parse(parts[1]);
+            this.direction = parts[2] == "TOCLIENT" ? HDirection.ToClient : HDirection.ToServer;
+            HPacket p = new HPacket(parts[3]);
+            p.constructFromString(parts[3]);
+            this.hPacket = p;
         }
 
         public string Stringify()
@@ -59,18 +59,7 @@ namespace GSharp.Protocol
             return s;
         }
 
-        public void constructFromString(string str)
-        {
-            string[] parts = str.Split('\t', 4);
-            this.isBlocked = parts[0] == "1";
-            this.index = int.Parse(parts[1]);
-            this.direction = parts[2] == "TOCLIENT" ? Direction.TOCLIENT : Direction.TOSERVER;
-            HPacket p = new HPacket(new byte[0]);
-            p.constructFromString(parts[3]);
-            this.hPacket = p;
-        }
-
-        public void ConstructFromHMessage(HMessage message)
+        public HMessage(HMessage message)
         {
             this.isBlocked = message.IsBlocked;
             this.index = message.getIndex();

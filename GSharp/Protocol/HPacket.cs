@@ -100,7 +100,7 @@ public class HPacket
         return _bytes.Skip(index).ToBool();
     }
 
-    public Boolean isCorrupted()
+    public Boolean IsCorrupted()
     {
 
         if (BytesLength >= 6)
