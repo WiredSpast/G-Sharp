@@ -10,11 +10,11 @@ public class HPacketTests
     [Test]
     public void ConstructFromIdentifierAndDirection()
     {
-        var packet = new HPacket("Chat", HDirection.ToClient);
+        var packet = new HPacket("Chat", HDirection.TOCLIENT);
         Assert.Multiple(() =>
         {
             Assert.That(packet.Identifier, Is.EqualTo("Chat"));
-            Assert.That(packet.Direction, Is.EqualTo(HDirection.ToClient));
+            Assert.That(packet.Direction, Is.EqualTo(HDirection.TOCLIENT));
             Assert.That(packet.IsEdited, Is.False);
             Assert.That(packet.Bytes, Is.EqualTo(new byte[] { 0, 0, 0, 2, 0, 0 }));
             Assert.That(packet.ReadIndex, Is.EqualTo(6));

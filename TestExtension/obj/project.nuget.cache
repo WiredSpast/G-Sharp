@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JX/+c2XzfMIoidArSZwaGm73KRHgFhZViQEw521AyiReUZ6+ljC/fk4S1Ic9Z6fAbbbaf9z0CraTN6fdRqrliw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\altorx\\Documents\\G-Sharp\\TestExtension\\TestExtension.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\altorx\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -449,6 +449,13 @@ public class HPacket
         Insert(_bytes.Length, s);
     }
 
+    internal void AppendLongString(string s)
+    {
+        var bytes = Encoding.UTF8.GetBytes(s);
+        Append(bytes.Length);
+        Append(bytes);
+    }
+
     public void FixLength()
     {
         var length = BytesLength - 4;

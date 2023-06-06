@@ -2,7 +2,9 @@
 
 namespace GSharp.Protocol
 {
+#pragma warning disable CS0659 // Type overrides Object.Equals(object o) but does not override Object.GetHashCode()
     public class HMessage : StringifyAble
+#pragma warning restore CS0659 // Type overrides Object.Equals(object o) but does not override Object.GetHashCode()
     {
         private HPacket hPacket;
         private HDirection direction;
@@ -47,7 +49,7 @@ namespace GSharp.Protocol
             string[] parts = str.Split('\t', 4);
             this.isBlocked = parts[0] == "1";
             this.index = int.Parse(parts[1]);
-            this.direction = parts[2] == "TOCLIENT" ? HDirection.ToClient : HDirection.ToServer;
+            this.direction = parts[2] == "TOCLIENT" ? HDirection.TOCLIENT : HDirection.TOSERVER;
             HPacket p = new HPacket(parts[3]);
             this.hPacket = p;
         }
@@ -66,7 +68,9 @@ namespace GSharp.Protocol
             this.hPacket = new HPacket(message.GetPacket());
         }
 
+#pragma warning disable CS8765 // Nullability of type of parameter doesn't match overridden member (possibly because of nullability attributes).
         public override bool Equals(object obj)
+#pragma warning restore CS8765 // Nullability of type of parameter doesn't match overridden member (possibly because of nullability attributes).
         {
             if (!(obj is HMessage))
                 return false;

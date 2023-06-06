@@ -10,3 +10,15 @@ C:\Users\jonas\RiderProjects\GSharp\GSharp\obj\Debug\net7.0\GSharp.dll
 C:\Users\jonas\RiderProjects\GSharp\GSharp\obj\Debug\net7.0\refint\GSharp.dll
 C:\Users\jonas\RiderProjects\GSharp\GSharp\obj\Debug\net7.0\GSharp.pdb
 C:\Users\jonas\RiderProjects\GSharp\GSharp\obj\Debug\net7.0\ref\GSharp.dll
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\GSharp.csproj.AssemblyReference.cache
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\GSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\GSharp.AssemblyInfoInputs.cache
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\GSharp.AssemblyInfo.cs
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\GSharp.csproj.CoreCompileInputs.cache
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\GSharp.dll
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\refint\GSharp.dll
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\GSharp.pdb
+C:\Users\altorx\Documents\G-Sharp\GSharp\bin\Debug\net7.0\GSharp.deps.json
+C:\Users\altorx\Documents\G-Sharp\GSharp\bin\Debug\net7.0\GSharp.dll
+C:\Users\altorx\Documents\G-Sharp\GSharp\bin\Debug\net7.0\GSharp.pdb
+C:\Users\altorx\Documents\G-Sharp\GSharp\obj\Debug\net7.0\ref\GSharp.dll

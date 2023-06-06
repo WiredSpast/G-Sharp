@@ -27,17 +27,17 @@ namespace GSharp.Services.PacketInfo
             if (packetInfo.GetHash() == null && packetInfo.GetName() == null) return;
 
             ConcurrentDictionary<int, List<PacketInfo>> headerIdToMessage =
-                packetInfo.GetDestination() == HDirection.ToClient
+                packetInfo.GetDestination() == HDirection.TOCLIENT
                     ? _headerIdToMessage_incoming
                     : _headerIdToMessage_outgoing;
 
             ConcurrentDictionary<string, List<PacketInfo>> hashToMessage =
-                packetInfo.GetDestination() == HDirection.ToClient
+                packetInfo.GetDestination() == HDirection.TOCLIENT
                     ? _hashToMessage_incoming
                     : _hashToMessage_outgoing;
 
             ConcurrentDictionary<string, List<PacketInfo>> nameToMessage =
-                packetInfo.GetDestination() == HDirection.ToClient
+                packetInfo.GetDestination() == HDirection.TOCLIENT
                     ? _nameToMessage_incoming
                     : nameToMessage_outgoing;
 
@@ -59,7 +59,7 @@ namespace GSharp.Services.PacketInfo
         public List<PacketInfo> GetAllPacketInfoFromHeaderId(HDirection direction, int headerId)
         {
             ConcurrentDictionary<int, List<PacketInfo>> headerIdToMessage =
-                direction == HDirection.ToServer
+                direction == HDirection.TOSERVER
                     ? _headerIdToMessage_outgoing
                     : _headerIdToMessage_incoming;
 
@@ -71,7 +71,7 @@ namespace GSharp.Services.PacketInfo
         public List<PacketInfo> GetAllPacketInfoFromHash(HDirection direction, string hash)
         {
             ConcurrentDictionary<string, List<PacketInfo>> hashToMessage =
-                direction == HDirection.ToServer
+                direction == HDirection.TOSERVER
                     ? _hashToMessage_outgoing
                     : _hashToMessage_incoming;
 
@@ -83,7 +83,7 @@ namespace GSharp.Services.PacketInfo
         public List<PacketInfo> GetAllPacketInfoFromName(HDirection direction, string name)
         {
             ConcurrentDictionary<string, List<PacketInfo>> nameToMessage =
-                direction == HDirection.ToServer
+                direction == HDirection.TOSERVER
                     ? nameToMessage_outgoing
                     : _nameToMessage_incoming;
 
@@ -130,7 +130,7 @@ namespace GSharp.Services.PacketInfo
                 string source = hPacket.ReadString();
 
                 packetInfoList.Add(new PacketInfo(
-                    isOutgoing ? HDirection.ToServer : HDirection.ToClient,
+                    isOutgoing ? HDirection.TOSERVER : HDirection.TOCLIENT,
                     headerId,
                     hash.Equals("NULL") ? null : hash,
                     name.Equals("NULL") ? null : name,
@@ -150,7 +150,7 @@ namespace GSharp.Services.PacketInfo
                 hPacket.Append(packetInfo.GetHash() == null ? "NULL" : packetInfo.GetHash());
                 hPacket.Append(packetInfo.GetName() == null ? "NULL" : packetInfo.GetName());
                 hPacket.Append(packetInfo.GetStructure() == null ? "NULL" : packetInfo.GetStructure());
-                hPacket.Append(packetInfo.GetDestination() == HDirection.ToServer);
+                hPacket.Append(packetInfo.GetDestination() == HDirection.TOSERVER);
                 hPacket.Append(packetInfo.GetSource());
             }
         }
