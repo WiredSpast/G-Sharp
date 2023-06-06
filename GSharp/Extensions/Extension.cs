@@ -192,18 +192,22 @@ namespace GSharp.Extensions
 
             _socket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
-            _socket.BeginConnect(remoteEP, ReadLoop, null);
+            _socket.Connect(remoteEP);
+            ReadLoop();
         }
 
-        private void ReadLoop(IAsyncResult ar)
+        private void ReadLoop()
         {
-            while (true)
+            new Thread(() =>
             {
-                var length_bytes = ReadSocketBytes(4);
-                var body_bytes = ReadSocketBytes(length_bytes.ToInt());
-                var bytes = length_bytes.Concat(body_bytes);
-                OnGPacket(new HPacket(bytes));
-            }
+                while (true)
+                {
+                    var lengthBytes = ReadSocketBytes(4);
+                    var bodyBytes = ReadSocketBytes(lengthBytes.ToInt());
+                    var bytes = lengthBytes.Concat(bodyBytes);
+                    OnGPacket(new HPacket(bytes));
+                }
+            }).Start();
         }
 
         private byte[] ReadSocketBytes(int size)
